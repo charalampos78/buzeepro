@@ -1,0 +1,335 @@
+$ncYellow : #FFFF00;
+$ncGrey : #707070;
+
+/* STYLE PAGE HEADERS
+  -------------------------------------------------- */
+
+html, body {
+  background:#242400 url('../media/bg_body.png');
+  //background: linear-gradient(to bottom, rgba(19, 19, 19, 0.2) 0, rgba(65, 65, 65, 0.29) 204px) no-repeat, url('../media/bg_body.png'), linear-gradient(to bottom, #0D0D0D 0, #2B2B2B 204px) no-repeat, #000000;
+  //background-size: 100% 204px, auto, 100% 204px, auto !important;
+  color: #333;
+}
+
+#wrap > .container > .row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+/* END STYLE PAGE HEADERS
+  -------------------------------------------------- */
+
+@mixin button-styles {
+  &:hover {
+    @include background-image(linear-gradient(to bottom, darken($ncGrey, 5%) 0, lighten($ncGrey, 15%) 20%, $ncGrey 50%, darken($ncGrey, 5%) 80%, $ncGrey 100%));
+    border:1px solid $ncGrey;
+    color:#000 !important;
+  }
+  @include background-image(linear-gradient(to bottom, #242424 0, #4F4F4F 20%, #2B2B2B 50%, #121212 80%, #1F1F1F 100%));
+  border: 1px solid #A8A8A8;
+}
+
+
+
+/* STYLE PAGE NAV BARS
+  -------------------------------------------------- */
+
+.navbar {
+  button.navbar-toggle {
+    @include button-styles;
+    margin-top:6px;
+    margin-bottom: 6px;
+    margin-right:0;
+    a {
+      color: $ncYellow;
+    }
+    .icon-bar {
+      background-color: $ncYellow;
+    }
+  }
+}
+
+#nav-top {
+
+  &:before {
+    content:" ";
+
+    @include background-image(linear-gradient(rgba(255, 255, 255, 0.01), rgba(0, 0, 0, 0.4)));
+    position: absolute;
+    width:100%;
+    height:150px;
+  }
+  background: transparent;
+  box-shadow: none;
+  min-height:initial;
+  border: 0;
+  z-index: 0;
+
+  @media (max-width: $screen-xs-max) {
+    margin:0;
+    min-height:26px;
+    &:before {
+      height:102px;
+    }
+    .collapse-box {
+      .navbar-collapse {
+        border: 0;
+      }
+    }
+    ul#utility-menu {
+      margin-top:0;
+      li {
+        display: inline-block;
+        float:left;
+      }
+    }
+  }
+  @media (max-width: 364px) {
+    &:before {
+      height:129px;
+    }
+  }
+  ul#utility-menu {
+    margin-bottom:0;
+    font-size:smaller;
+    li {
+      &:first-child a {
+        border-radius: 10px 0 0 10px;
+      }
+      &:last-child a {
+        border-radius: 0 10px 10px 0;
+      }
+      &.active a {
+        @include background-image(linear-gradient(to bottom, darken($ncYellow, 5%) 0, lighten($ncYellow, 15%) 20%, $ncYellow 50%, darken($ncYellow, 5%) 80%, $ncYellow 100%));
+        border:1px solid darken($ncYellow, 4%);
+        color:black;
+      }
+
+      a {
+        @include button-styles;
+        border:0 !important;
+        &:hover {
+          color: white;
+        }
+        color: rgb(226, 52, 29);
+        padding-top: 3px;
+        padding-bottom: 3px;
+      }
+    }
+  }
+
+  .navbar-brand {
+
+    @media (min-width: $screen-sm-min) {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      top:50px;
+      left: 0;
+      right: 0;
+      width:600px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width:330px;
+      margin-top: 19px;
+      margin-bottom: -19px;
+    }
+    @media (max-width: $screen-xs-max) {
+      width:330px;
+      margin-top: 19px;
+      margin-bottom: -19px;
+    }
+
+    padding-top:10px;
+    padding-bottom:10px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+#nav-main {
+  background: transparent;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0);
+  border:0;
+  margin:0 auto 10px auto;
+  float: none;
+
+  @media (min-width: $screen-sm-min) {
+
+    padding:0 6px;
+    .container-fluid, .navbar-collapse {
+      padding:0;
+    }
+
+
+    ul {
+      display: table;
+      width:100%;
+      li {
+        display: table-cell;
+        float: none;
+        text-align: center;
+
+      }
+    }
+  }
+
+  ul {
+
+    li {
+      &.active > a {
+        @include background-image(linear-gradient(to bottom, darken($ncYellow, 5%) 0, lighten($ncYellow, 15%) 20%, $ncYellow 50%, darken($ncYellow, 5%) 80%, $ncYellow 100%));
+        border:1px solid darken($ncYellow, 4%);
+        color:black;
+      }
+      & > a {
+        @include button-styles;
+        padding:10px;
+        margin:5px 10px;
+
+        border-radius: 5px;
+
+        &:hover {
+          color:#FFF;
+        }
+        color:$ncYellow;
+      }
+
+    }
+  }
+}
+
+#logo-wrapper {
+  padding:0px;
+  float:none;
+  margin:auto;
+  margin-bottom:-15px;
+}
+#logo-box {
+
+  width:100%;
+
+  .logo-container {
+    a {
+      color:white;
+      text-decoration: none !important;
+    }
+
+    background-color: rgba(1, 1, 1, 0.7);
+    border: 5px solid yellow;
+    border-radius: 0px;
+    padding: 0;
+    margin-bottom: 3px;
+
+    font-family: "nc", monospace;
+    font-size: 57px;
+    line-height: 49px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    text-align: center;
+
+
+
+  }
+
+  .logo-bottom {
+    &:before, &:after {
+      @include background-image(linear-gradient(to bottom, transparentize($ncYellow, 0.3) 0, transparent 100%));
+      height:30px;
+      width:5px;
+      content:"";
+      position: absolute;
+    }
+    &:after {
+      right:0;
+    }
+
+    border-top:5px solid rgba(255,255,0,0.7);
+    height:30px;
+
+  }
+}
+@media (max-width: $screen-xs-max) {
+  #logo-box {
+    .logo-container {
+      margin-bottom:2px;
+      border-radius:3px;
+      border-width:3px;
+      font-size:30px;
+      line-height: 27px;
+      letter-spacing: 1vw;
+    }
+    .logo-bottom {
+      border-width:3px;
+      border-radius:3px;
+    }
+
+  }
+}
+
+
+/* END STYLE PAGE NAV BARS
+  -------------------------------------------------- */
+
+/*
+  PAGE STYLING
+  -------------------------------------------------- */
+body.cke_editable {
+  height: auto;
+  margin:10px;
+  border-radius: 5px;
+  padding:25px 10px;
+  background: rgba(255, 255, 168, 0.55);
+  border: 15px solid rgba(255, 255, 46, 0.1);
+  box-shadow: inset 0 0 0 1px #636363, inset 0px 0px 0 95000px #fff, 0px 0px 1px 1px #FF0;
+}
+.row.page-body {
+  background: rgba(255, 255, 168, 0.55);
+  border: 1px solid rgba(255, 255, 46, 0.6);
+  border-radius: 10px;
+  padding:15px;
+
+
+  & > div {
+    border: 1px solid #636363;
+    border-radius: 7px;
+    background:white;
+    padding-top: 25px;
+    padding-bottom:25px;
+  }
+}
+
+#footer {
+
+  &:before, &:after {
+    @include background-image(linear-gradient(to top, $ncYellow 0, transparentize($ncYellow, 0.8) 80%, transparent 100%));
+    height:120%;
+    width:5px;
+    content:"";
+    position: absolute;
+    bottom:0;
+  }
+  &:before {
+    left:0;
+  }
+  &:after {
+    right:0;
+  }
+
+  background: transparent;
+  @include background-image(linear-gradient(to top, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.5) 65%, rgba(0, 0, 0, 0) 107%));
+  position: relative;
+  margin:10px -4px;
+  padding-top:20px;
+  border-radius: 0px;
+  border-bottom: 5px solid yellow;
+  color: white;
+  //box-shadow: inset 0 0 0 1px #636363, inset 0px 0px 0 95000px #fff, 0px 0px 1px 1px #FF0;
+
+  .muted {
+    font-size: smaller;
+  }
+}

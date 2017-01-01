@@ -1,0 +1,37 @@
+.endorse-non-std {
+  display:none;
+}
+
+
+#documents {
+
+  h4 {
+    margin-top:0;
+  }
+
+}
+
+/****************************
+ Register page
+ ****************************/
+
+.register-terms {
+  padding:5px;
+  margin:0 5px;
+  border:1px solid black;
+  box-shadow: inset 0 0 3px 0 black;
+  border-radius:10px;
+
+  font-size:1.2rem;
+  div {
+    max-height:130px;
+    overflow-y: scroll;
+  }
+}
+
+/****************************
+ Calculated page
+ ****************************/
+#export-email-box label {
+  display:none;
+}

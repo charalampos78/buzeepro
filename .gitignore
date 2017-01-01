@@ -1,0 +1,6 @@
+PHPMailer
+bragify
+php/db_connect.php
+admin/php/db_connect.php
+
+*.config

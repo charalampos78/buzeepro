@@ -1,0 +1,53 @@
+@media print {
+
+  @page
+  {
+    size: auto;   /* auto is the current printer page size */
+    margin: 5mm 0mm;  /* this affects the margin in the printer settings */
+  }
+
+  #footer, #push {
+    display:none;
+  }
+
+  #loan, .document, #endorsements, #tax-collector  {
+    page-break-inside: avoid;
+    display:block;
+  }
+
+
+  #logo-box {
+    a[href]:after {
+      content: none !important;
+    }
+
+    .logo-container {
+      border:0;
+      font-size:20px;
+    }
+    .logo-bottom {
+      display: none;
+    }
+
+  }
+  #page-body-content-wrapper {
+    padding:0;
+  }
+  #page-body {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+
+
+
+  .row.page-body {
+    border:0;
+
+    & > div {
+      border:0;
+    }
+
+  }
+
+}

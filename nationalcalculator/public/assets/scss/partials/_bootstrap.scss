@@ -1,0 +1,182 @@
+/* OVER RIDE Bootstrap and Bootstrap Fixes
+  -------------------------------------------------- */
+
+/* adjust container sizes so they match original 10 col width at everything over medium */
+
+.container {
+  @media (min-width: $screen-md-min) {
+    width: 10/$grid-columns * $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: 10/$grid-columns * $container-lg;
+  }
+}
+
+
+.navbar-toggle {
+  & > div {
+    float:left;
+  }
+  .navbar-toggle-label {
+    float:left;
+    padding:0 7px;
+    height:auto;
+    text-decoration: none;
+  }
+}
+
+.navbar-toggle-label {
+  color: #777777;
+}
+.navbar-inverse .navbar-toggle-label {
+  color: #FFFFFF;
+}
+
+
+.nav.navbar-nav {
+  li.divider {
+    @include nav-divider($dropdown-divider-bg);
+  }
+}
+
+@media (max-width: 450px) {
+  .form-group-sm {
+    padding:0px;
+  }
+  .form-group-sm select {
+    padding-left:0px !important;
+    padding-right:0px !important;
+  }
+}
+
+input.form-control[type=checkbox] {
+  margin:0;
+  width: $input-height-base;
+}
+.form-group-sm {
+  input.form-control[type=checkbox] {
+    width: $input-height-small;
+  }
+}
+.form-group-lg {
+  input.form-control[type=checkbox] {
+    width: $input-height-large;
+  }
+}
+
+
+
+/* BOOTSTRAP CENTER BLOCKS
+  -------------------------------------------------- */
+@mixin row-centered() {
+  text-align:center;
+
+  & > * {
+    /* reset the text-align */
+    text-align: left;
+  }
+
+  & > [class*='col-'] {
+    display:inline-block;
+    float:none;
+    /* inline-block space fix */
+    //  margin-right:-4px; //makes page scroll if too small :/
+  }
+
+}
+
+.row-centered {
+  @include row-centered();
+}
+
+
+@media (min-width: $screen-xs-min) {
+  .row-centered-xs {
+    @include row-centered();
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .row-centered-sm {
+    @include row-centered();
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .row-centered-md {
+    @include row-centered();
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .row-centered-lg {
+    @include row-centered();
+  }
+}
+
+
+/* END BOOTSTRAP CENTER BLOCKS
+  -------------------------------------------------- */
+
+
+/* BOOTSTRAP CENTER MODAL
+  -------------------------------------------------- */
+.modal {
+  .vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+    pointer-events: none; /* This makes sure that we can still click outside of the modal to close it */
+  }
+  .vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events: none;
+  }
+  .modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width: inherit;
+    height: inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+  }
+}
+/* END BOOTSTRAP CENTER MODAL
+  -------------------------------------------------- */
+
+
+.btn {
+  color:#000;
+
+  &.active {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.15) 20%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.05) 80%, rgba(255, 255, 255, 0) 100%);
+  }
+//  &:hover {
+//    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.15) 48%, rgba(0, 0, 0, 0.3) 48%, rgba(255, 255, 255, 0.15) 100%);
+//    background-position: 0;
+//  }
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.15) 20%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.05) 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(255,255,255,0.07);
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: rgba(1,1,1,0.4);
+}
+
+
+.modal-content {
+  background: rgba(255,255,255,0.9);
+  border: 2px solid #666;
+}
+.modal-header .close {
+  &:hover {
+    opacity:0.8;
+  }
+  opacity:0.4;
+  color:#fff;
+  text-shadow: 0 1px 0 #000;
+}

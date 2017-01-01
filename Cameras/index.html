@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cameras</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    
+
+    
+    
+<script>
+   setInterval('someFunc()', 800);
+
+function someFunc()
+{
+var d = new Date;
+var newsrc = "http://192.168.0.11/image/jpeg.cgi?refreashId="+d.getTime();  
+$("#cam1").attr("src", newsrc);
+someFunc2(d);
+
+}
+    
+    
+function someFunc2(d2)
+{
+var d = d2;
+var newsrc2 = "http://192.168.0.5/cgi-bin/viewer/video.jpg?system_datetime="+d;
+$("#cam2").attr("src", newsrc2);
+}    
+    
+    
+    
+    
+    
+    
+                
+</script>
+    
+    
+    
+<body>
+        <div>
+            <img id ="cam1" src="http://192.168.0.11/image/jpeg.cgi?"></img>
+            <img id ="cam2" src="http://192.168.0.5/cgi-bin/viewer/video.jpg?system_datetime=0"></img>
+        </div>
+</body>
+</html>
+<!-- src='http://192.168.0.5/cgi-bin/viewer/video.jpg?system_datetime=0'
+
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+
+-->

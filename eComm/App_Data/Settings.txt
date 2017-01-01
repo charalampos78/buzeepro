@@ -1,0 +1,2 @@
+DataProvider: sqlserver
+DataConnectionString: Data Source=hlmain;Initial Catalog=nopcommerce602;Integrated Security=False;Persist Security Info=False;User ID=sa;Password=Agapi1234

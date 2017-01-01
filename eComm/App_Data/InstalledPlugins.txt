@@ -1,0 +1,8 @@
+CurrencyExchange.ECB
+Payments.Manual
+Pickup.PickupInStore
+Shipping.FixedRate
+Tax.FixedRate
+Widgets.NivoSlider
+Payments.PayPalStandard
+Shipping.USPS

@@ -1,0 +1,54 @@
+ .header-content {
+background:
+     linear-gradient(
+      rgba(54, 54, 54, 0.9),
+      rgba(154, 154, 154, 0.8),
+      rgba(54, 54, 54, 0.9)
+         );
+ }
+
+label{
+color: white;
+}
+
+#front{
+    font-family:inherit;
+    text-transform: capitalize;
+}
+
+.service-img
+{
+width:100px;
+}
+
+#pricing{
+background-color: dimgray;
+color:white;
+padding: 50px;
+
+}
+
+#pricing img
+{
+width:100px;
+}
+
+/*
+#leftteam{
+float:left;  
+}
+
+#leftteam div{
+padding:3px; 
+}
+
+#rightteam div{
+padding:3px; 
+}
+*/
+
+.btn-primary, .bg-primary{
+background-color: #ff4a00;
+}
+.,bg-primary
+

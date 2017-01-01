@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Street View</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	  #map {
+	  height:100%;
+	  }
+    </style>
+  </head>
+  <body>
+  	<div id="map"></div>
+    <script>
+	
+ var lati = parseFloat(getUrlVars()["id1"]);
+var longti = parseFloat(getUrlVars()["id2"]); 
+
+//var lati = 26.382332;
+//var longti = -80.135057;
+
+//alert(lati);
+//alert(longti);
+
+function getUrlVars() {
+var vars = {};
+var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+vars[key] = value;
+});
+return vars;
+}
+
+function initMap() {
+ var   myLatLng = {lat: lati, lng: longti};
+
+ var   map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    zoom: 18,
+	mapTypeId: google.maps.MapTypeId.SATELLITE
+	});
+	
+var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+  });
+}
+    </script>
+		
+    <script async defer src="https://maps.googleapis.com/maps/api/js?&callback=initMap"></script>
+
+  </body>
+</html>

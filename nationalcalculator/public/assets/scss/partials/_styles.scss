@@ -1,0 +1,77 @@
+html, body {
+  font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, 'Times New Roman', Times, Serif;
+}
+h1
+{
+  color: #808080;
+}
+h2
+{
+  color: #9C9C9C;
+}
+h3
+{
+  color: #858500;
+}
+h4
+{
+  color: #696969;
+}
+h5
+{
+  color: #696969;
+}
+h6 {
+  color: #B8B8B8;
+}
+
+a {
+  &:hover, &:visited, &:active {
+    color: darken($ncYellow, 10%);
+  }
+  color: desaturate($ncYellow, 90%);
+}
+
+blockquote {
+  @include clearfix();
+  background: #3B3B3B url('../media/quote.png') no-repeat scroll;
+  border:1px dotted #787878;
+  padding:15px 15px 15px 48px;
+  margin:0 0 0 15px;
+  color: #BABABA;
+}
+
+
+.accordion-widget {
+  & > h3 {
+    color: $ncYellow;
+    text-shadow:1px 1px 1px black;
+    margin:3px 0 0 0;
+    padding:3px 0 3px 20px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    cursor: pointer;
+    @include background-image(linear-gradient(to bottom, darken(#444, 5%) 0, lighten(#444, 15%) 20%, #444 50%, darken(#444, 5%) 80%, #444 100%));
+
+    &.ui-accordion-header-active {
+      color: $ncGrey;
+      @include background-image(linear-gradient(to bottom, darken($ncYellow, 5%) 0, lighten($ncYellow, 15%) 20%, $ncYellow 50%, darken($ncYellow, 5%) 80%, $ncYellow 100%));
+    }
+  }
+
+  .accordion-body {
+    & > div {
+      margin: 15px;
+    }
+
+    @include background-image(linear-gradient(rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.1)));
+
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 0 !important;
+  }
+}

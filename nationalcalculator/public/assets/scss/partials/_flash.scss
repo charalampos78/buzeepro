@@ -1,0 +1,42 @@
+/* FLASH NOTIFICATIONS
+  -------------------------------------------------- */
+
+div#flash-notifications {
+  width: 100%;
+  z-index:99999;
+  position: relative;
+  top:0px;
+
+}
+
+div.flash-block {
+  position: relative;
+  width:100%;
+  background:#88A02B;
+  top:0px;
+  overflow:visible;
+  display:none;
+  z-index:99999;
+}
+div.flash-block p {
+  padding:10px 1% 10px 2%;
+  margin:0;
+}
+div.flash-block div.click-remove {
+  font-size:smaller;
+  padding:10px 1% 10px 2%;
+}
+
+/* http://www.colorzilla.com/gradient-editor/ */
+div.flash-type-success {
+  $svg-gradient-shim-threshold: 1;
+  @include background-image(linear-gradient(to bottom, #259db5 0%,#2cb9d6 47%,#1f8093 100%));
+}
+div.flash-type-info, div.flash-type-notice {
+  $svg-gradient-shim-threshold: 1;
+  @include background-image(linear-gradient(to bottom,  #eba334 0%,#f4a938 50%,#9b6b23 100%));
+}
+div.flash-type-error, div.flash-type-warning {
+  $svg-gradient-shim-threshold: 1;
+  @include background-image(linear-gradient(to bottom,  #e04662 0%,#f74f68 50%,#a53547 100%));
+}

@@ -1,0 +1,148 @@
+/* BASE STYLES
+  -------------------------------------------------- */
+
+.right {
+  float:right;
+}
+.left {
+  float:left;
+}
+
+/* clear fix */
+.cf {
+  @include clearfix;
+}
+
+/* END BASE STYLES
+  -------------------------------------------------- */
+
+
+
+/* STICKY FOOTER
+  -------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin for sticky footer. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto;
+}
+
+/* Push content below fixed nav bar */
+#wrap > .navbar-fixed-top + .container {
+  padding-top: 72px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  min-height: 60px;
+}
+#footer {
+  background-color: #f5f5f5;
+  padding:10px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    //these cause page horizontal scrolling in chrome
+//    margin-left: -20px;
+//    margin-right: -20px;
+//    padding-left: 20px;
+//    padding-right: 20px;
+  }
+}
+
+/* END STICKY FOOTER
+  -------------------------------------------------- */
+
+/* HIDE / SHOW PASSWORD
+  -------------------------------------------------- */
+
+.hideShowPassword-toggle {
+  background-color: transparent;
+  background-image: url('../ico/wink.png');
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  border: 2px solid transparent;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  margin: 0;
+  max-height: 100%;
+  padding: 0;
+  overflow: 'hidden';
+  text-indent: -999em;
+  width: 46px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.hideShowPassword-toggle-hide {
+  background-position: -44px center;
+}
+
+.hideShowPassword-toggle:hover,
+.hideShowPassword-toggle:focus {
+  border-color: #0088cc;
+  outline: transparent;
+}
+
+//fix sizing of password show button when validation validates
+.has-error + .hideShowPassword-toggle {
+  top: 17px !important;
+  height: 34px;
+}
+
+/* END HIDE / SHOW PASSWORD
+  -------------------------------------------------- */
+
+
+
+
+/* FORM ERRORS
+  -------------------------------------------------- */
+.has-error {
+  color:red;
+}
+span.has-error {
+  font-size:smaller;
+}
+
+#err_msg + span.has-error {
+  display: block;
+  padding: $alert-padding;
+  margin-bottom: $line-height-computed;
+  border: 1px solid transparent;
+  border-radius: $alert-border-radius;
+  font-size: inherit;
+
+  @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
+  @include gradient-vertical($start-color: $alert-danger-bg, $end-color: darken($alert-danger-bg, 7.5%));
+  border-color: darken($alert-danger-bg, 15%);
+
+}
+
+
+
+/* END FORM ERRORS
+  -------------------------------------------------- */
+
+
+
+
+
+
+
+/* Custom page CSS
+  -------------------------------------------------- */

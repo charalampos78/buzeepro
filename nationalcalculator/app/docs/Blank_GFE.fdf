@@ -1,0 +1,600 @@
+%FDF-1.2
+%‚„œ”
+1 0 obj 
+<<
+/FDF 
+<<
+/Fields [
+<<
+/V ()
+/T (Property-Address)
+>> 
+<<
+/V ()
+/T (T8-1203)
+>> 
+<<
+/V ()
+/T (T2e)
+>> 
+<<
+/V ()
+/T (T2d)
+>> 
+<<
+/V ()
+/T (initialmonthlyamount)
+>> 
+<<
+/V ()
+/T (T2c)
+>> 
+<<
+/V ()
+/T (T2b)
+>> 
+<<
+/V ()
+/T (T2a)
+>> 
+<<
+/V ()
+/T (Text199)
+>> 
+<<
+/V ()
+/T (Text198)
+>> 
+<<
+/V ()
+/T (Text197)
+>> 
+<<
+/V ()
+/T (Text196)
+>> 
+<<
+/V ()
+/T (Text195)
+>> 
+<<
+/V ()
+/T (Text194)
+>> 
+<<
+/V ()
+/T (Text193)
+>> 
+<<
+/V ()
+/T (loan-amount)
+>> 
+<<
+/V ()
+/T (Text192)
+>> 
+<<
+/V ()
+/T (Text191)
+>> 
+<<
+/V ()
+/T (Text190)
+>> 
+<<
+/V ()
+/T (T11d)
+>> 
+<<
+/V ()
+/T (T11c)
+>> 
+<<
+/V ()
+/T (T11b)
+>> 
+<<
+/V ()
+/T (initialinterestrate)
+>> 
+<<
+/V ()
+/T (T11a)
+>> 
+<<
+/V ()
+/T (loanterm)
+>> 
+<<
+/V ()
+/T (T9)
+>> 
+<<
+/V ()
+/T (Originator-Name)
+>> 
+<<
+/V ()
+/T (T6)
+>> 
+<<
+/V ()
+/T (T3)
+>> 
+<<
+/V ()
+/T (T2)
+>> 
+<<
+/V ()
+/T (T1)
+>> 
+<<
+/V ()
+/T (GFE-date)
+>> 
+<<
+/V ()
+/T (Text189)
+>> 
+<<
+/V ()
+/T (loan-amount2)
+>> 
+<<
+/V ()
+/T (Text188)
+>> 
+<<
+/V ()
+/T (Text187)
+>> 
+<<
+/V ()
+/T (Text186)
+>> 
+<<
+/V ()
+/T (Text185)
+>> 
+<<
+/V ()
+/T (T9a)
+>> 
+<<
+/V ()
+/T (Text184)
+>> 
+<<
+/V ()
+/T (Text54)
+>> 
+<<
+/V ()
+/T (days-before-settlement)
+>> 
+<<
+/V ()
+/T (Text183)
+>> 
+<<
+/V ()
+/T (Text182)
+>> 
+<<
+/V ()
+/T (Text181)
+>> 
+<<
+/V (0)
+/T (B2)
+>> 
+<<
+/V ()
+/T (Text180)
+>> 
+<<
+/V ()
+/T (T10c)
+>> 
+<<
+/V ()
+/T (T10b)
+>> 
+<<
+/V ()
+/T (T10a)
+>> 
+<<
+/V (0)
+/T (AB)
+>> 
+<<
+/V /
+/T (T9-check1)
+>> 
+<<
+/V /
+/T (T9-check2)
+>> 
+<<
+/V /
+/T (T9-check3)
+>> 
+<<
+/V ()
+/T (T11)
+>> 
+<<
+/V ()
+/T (T10)
+>> 
+<<
+/V ()
+/T (Text179)
+>> 
+<<
+/V ()
+/T (Text178)
+>> 
+<<
+/V ()
+/T (Text177)
+>> 
+<<
+/V ()
+/T (Text61)
+>> 
+<<
+/V ()
+/T (Text176)
+>> 
+<<
+/V ()
+/T (Text175)
+>> 
+<<
+/V ()
+/T (Text174)
+>> 
+<<
+/V ()
+/T (Text64)
+>> 
+<<
+/V ()
+/T (Text173)
+>> 
+<<
+/V ()
+/T (Text172)
+>> 
+<<
+/V ()
+/T (Text171)
+>> 
+<<
+/V (0)
+/T (A2)
+>> 
+<<
+/V ()
+/T (Text170)
+>> 
+<<
+/V ()
+/T (T7-1201)
+>> 
+<<
+/V ()
+/T (days-to-lock)
+>> 
+<<
+/V ()
+/T (Originator-Address2)
+>> 
+<<
+/V ()
+/T (Text169)
+>> 
+<<
+/V ()
+/T (Text168)
+>> 
+<<
+/V ()
+/T (Text167)
+>> 
+<<
+/V ()
+/T (Text166)
+>> 
+<<
+/V ()
+/T (Text165)
+>> 
+<<
+/V ()
+/T (Text164)
+>> 
+<<
+/V ()
+/T (Text163)
+>> 
+<<
+/V ()
+/T (Text162)
+>> 
+<<
+/V ()
+/T (Text161)
+>> 
+<<
+/V ()
+/T (Text160)
+>> 
+<<
+/V ()
+/T (Text212)
+>> 
+<<
+/V ()
+/T (Text211)
+>> 
+<<
+/V ()
+/T (settlement-date)
+>> 
+<<
+/V ()
+/T (Text210)
+>> 
+<<
+/V ()
+/T (Borrower2)
+>> 
+<<
+/V ()
+/T (T6f)
+>> 
+<<
+/V ()
+/T (T6e)
+>> 
+<<
+/V ()
+/T (Text159)
+>> 
+<<
+/V ()
+/T (T6d)
+>> 
+<<
+/V ()
+/T (Text158)
+>> 
+<<
+/V ()
+/T (T6c)
+>> 
+<<
+/V ()
+/T (Text157)
+>> 
+<<
+/V ()
+/T (Originator-Email)
+>> 
+<<
+/V ()
+/T (T6b)
+>> 
+<<
+/V ()
+/T (Text156)
+>> 
+<<
+/V ()
+/T (T6a)
+>> 
+<<
+/V ()
+/T (Text155)
+>> 
+<<
+/V ()
+/T (Text154)
+>> 
+<<
+/V ()
+/T (Text153)
+>> 
+<<
+/V ()
+/T (Text152)
+>> 
+<<
+/V ()
+/T (T5-1103)
+>> 
+<<
+/V ()
+/T (Text209)
+>> 
+<<
+/V ()
+/T (Text151)
+>> 
+<<
+/V ()
+/T (Text208)
+>> 
+<<
+/V ()
+/T (Text150)
+>> 
+<<
+/V ()
+/T (Text207)
+>> 
+<<
+/V ()
+/T (Text206)
+>> 
+<<
+/V ()
+/T (Text205)
+>> 
+<<
+/V ()
+/T (Borrower)
+>> 
+<<
+/V ()
+/T (Text204)
+>> 
+<<
+/V ()
+/T (Text203)
+>> 
+<<
+/V ()
+/T (Text202)
+>> 
+<<
+/V ()
+/T (Text201)
+>> 
+<<
+/V ()
+/T (Text200)
+>> 
+<<
+/V ()
+/T (Text2)
+>> 
+<<
+/V ()
+/T (Text1)
+>> 
+<<
+/V (0)
+/T (B)
+>> 
+<<
+/V (0)
+/T (A)
+>> 
+<<
+/V (0)
+/T (AB2)
+>> 
+<<
+/V ()
+/T (Property-Address2)
+>> 
+<<
+/V ()
+/T (Text17)
+>> 
+<<
+/V /
+/T (T2-Radio)
+>> 
+<<
+/V ()
+/T (firstchange)
+>> 
+<<
+/V ()
+/T (maxinterestrate)
+>> 
+<<
+/V /
+/T (Radio Button6)
+>> 
+<<
+/V /
+/T (Radio Button5)
+>> 
+<<
+/V /
+/T (Radio Button4)
+>> 
+<<
+/V /
+/T (Radio Button3)
+>> 
+<<
+/V /
+/T (Radio Button2)
+>> 
+<<
+/V /
+/T (Radio Button1)
+>> 
+<<
+/V ()
+/T (T3h)
+>> 
+<<
+/V ()
+/T (T3g)
+>> 
+<<
+/V ()
+/T (Text26)
+>> 
+<<
+/V ()
+/T (T3f)
+>> 
+<<
+/V ()
+/T (Text27)
+>> 
+<<
+/V ()
+/T (T3e)
+>> 
+<<
+/V ()
+/T (T3d)
+>> 
+<<
+/V ()
+/T (T3c)
+>> 
+<<
+/V ()
+/T (interest-date)
+>> 
+<<
+/V ()
+/T (T3b)
+>> 
+<<
+/V ()
+/T (T3a)
+>> 
+<<
+/V ()
+/T (Originator-Phone)
+>> 
+<<
+/V ()
+/T (T4-1101)
+>> 
+<<
+/V ()
+/T (Originator-Address)
+>>]
+>>
+>>
+endobj 
+trailer
+
+<<
+/Root 1 0 R
+>>
+%%EOF
